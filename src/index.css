@@ -18,40 +18,40 @@ All colors MUST be HSL.
     --popover: 240 4% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 270 91% 65%;
+    --primary: 30 54% 43%;
     --primary-foreground: 0 0% 100%;
-
+    
     --secondary: 240 4% 12%;
     --secondary-foreground: 0 0% 98%;
-
+    
     --muted: 240 4% 12%;
     --muted-foreground: 240 5% 64%;
-
-    --accent: 280 100% 70%;
-    --accent-foreground: 0 0% 10%;
-
+    
+    --accent: 21 41% 42%;
+    --accent-foreground: 0 0% 100%;
+    
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
+    
     --border: 240 4% 15%;
     --input: 240 4% 15%;
-    --ring: 270 91% 65%;
+    --ring: 30 54% 43%;
 
     --radius: 0.75rem;
 
-    /* Kalahari Brand Colors */
-    --kalahari-orange: 25 95% 53%;
-    --kalahari-purple: 270 91% 65%;
-    --kalahari-blue: 220 91% 65%;
-    --kalahari-pink: 320 91% 65%;
+    /* Kalahari Brand Colors - Earth Tones from Logo */
+    --kalahari-brown-primary: 21 41% 42%;  /* #99573D */
+    --kalahari-brown-secondary: 30 54% 43%; /* #AD6734 */
+    --kalahari-brown-tertiary: 35 57% 42%; /* #A8622F */
+    --kalahari-dark: 343 26% 29%; /* #5B343F */
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--kalahari-purple)), hsl(var(--kalahari-pink)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--kalahari-blue)), hsl(var(--kalahari-purple)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--kalahari-orange)), hsl(var(--kalahari-pink)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--kalahari-brown-secondary)), hsl(var(--kalahari-brown-tertiary)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--kalahari-brown-primary)), hsl(var(--kalahari-brown-secondary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--kalahari-brown-tertiary)), hsl(var(--kalahari-dark)));
     
     /* Shadows */
-    --shadow-glow: 0 0 50px hsl(var(--kalahari-purple) / 0.3);
+    --shadow-glow: 0 0 50px hsl(var(--kalahari-brown-secondary) / 0.3);
     --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
     
     /* Animations */
@@ -59,12 +59,12 @@ All colors MUST be HSL.
 
     --sidebar-background: 240 4% 6%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 270 91% 65%;
+    --sidebar-primary: 30 54% 43%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4% 12%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 4% 15%;
-    --sidebar-ring: 270 91% 65%;
+    --sidebar-ring: 30 54% 43%;
   }
 
   .dark {
@@ -75,19 +75,19 @@ All colors MUST be HSL.
     --card-foreground: 0 0% 98%;
     --popover: 240 4% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 270 91% 65%;
+    --primary: 30 54% 43%;
     --primary-foreground: 0 0% 100%;
     --secondary: 240 4% 12%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 4% 12%;
     --muted-foreground: 240 5% 64%;
-    --accent: 280 100% 70%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 21 41% 42%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 4% 15%;
     --input: 240 4% 15%;
-    --ring: 270 91% 65%;
+    --ring: 30 54% 43%;
   }
 }
 

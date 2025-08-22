@@ -53,10 +53,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				kalahari: {
-					orange: 'hsl(var(--kalahari-orange))',
-					purple: 'hsl(var(--kalahari-purple))',
-					blue: 'hsl(var(--kalahari-blue))',
-					pink: 'hsl(var(--kalahari-pink))'
+					'brown-primary': 'hsl(var(--kalahari-brown-primary))',
+					'brown-secondary': 'hsl(var(--kalahari-brown-secondary))',
+					'brown-tertiary': 'hsl(var(--kalahari-brown-tertiary))',
+					'dark': 'hsl(var(--kalahari-dark))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

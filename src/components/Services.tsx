@@ -9,28 +9,28 @@ const Services = () => {
       title: "FinTech Solutions",
       description: "Revolutionary financial technology platforms that transform how African businesses handle payments, lending, and digital banking.",
       features: ["Mobile Payment Systems", "Digital Wallets", "Microfinance Platforms", "Blockchain Payments"],
-      color: "kalahari-orange"
+      color: "kalahari-brown-secondary"
     },
     {
       icon: Brain,
       title: "AI Development",
       description: "Cutting-edge artificial intelligence solutions that automate processes and provide intelligent insights for business growth.",
       features: ["Machine Learning Models", "Natural Language Processing", "Computer Vision", "Predictive Analytics"],
-      color: "kalahari-purple"
+      color: "kalahari-brown-primary"
     },
     {
       icon: Link2,
       title: "Blockchain Technology",
       description: "Secure, transparent blockchain solutions for supply chain, identity verification, and decentralized applications.",
       features: ["Smart Contracts", "Supply Chain Tracking", "Digital Identity", "DeFi Applications"],
-      color: "kalahari-blue"
+      color: "kalahari-brown-tertiary"
     },
     {
       icon: GraduationCap,
       title: "EdTech Platforms",
       description: "Educational technology solutions that make quality learning accessible across Africa through innovative digital platforms.",
       features: ["Learning Management Systems", "Virtual Classrooms", "Mobile Learning Apps", "Assessment Tools"],
-      color: "kalahari-pink"
+      color: "kalahari-dark"
     }
   ];
 
