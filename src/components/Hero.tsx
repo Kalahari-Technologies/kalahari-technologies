@@ -28,7 +28,7 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
             Kalahari Technologies empowers small businesses and startups across Africa with 
-            cutting-edge IT solutions in FinTech, AI, Blockchain, and EdTech.
+            cutting-edge IT solutions in Fintech, Artificial Intelligence, Blockchain, and Education Technology.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -46,7 +46,7 @@ const Hero = () => {
               Trusted by African Startups
             </p>
             <div className="flex items-center justify-center gap-8 opacity-60">
-              <div className="text-muted-foreground font-semibold">FinTech Solutions</div>
+              <div className="text-muted-foreground font-semibold">Fintech Solutions</div>
               <div className="text-muted-foreground font-semibold">AI Development</div>
               <div className="text-muted-foreground font-semibold">Blockchain Tech</div>
               <div className="text-muted-foreground font-semibold">EdTech Platforms</div>
