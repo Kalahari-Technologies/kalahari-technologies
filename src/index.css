@@ -107,15 +107,15 @@ All colors MUST be HSL.
 
 @layer utilities {
   .gradient-primary {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, hsl(var(--kalahari-brown-secondary)), hsl(var(--kalahari-brown-tertiary)));
   }
   
   .gradient-secondary {
-    background: var(--gradient-secondary);
+    background: linear-gradient(135deg, hsl(var(--kalahari-brown-primary)), hsl(var(--kalahari-brown-secondary)));
   }
   
   .gradient-accent {
-    background: var(--gradient-accent);
+    background: linear-gradient(135deg, hsl(var(--kalahari-brown-tertiary)), hsl(var(--kalahari-dark)));
   }
   
   .shadow-glow {
