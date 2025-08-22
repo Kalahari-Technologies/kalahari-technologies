@@ -76,7 +76,7 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="ghost" className="group p-0 h-auto text-primary hover:text-primary">
+                  <Button variant="link" className="group p-0 h-auto text-primary hover:text-primary/80 hover:no-underline">
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Button>
