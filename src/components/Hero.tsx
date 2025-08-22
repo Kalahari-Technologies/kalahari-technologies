@@ -19,7 +19,7 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Building Africa's{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-kalahari-brown-secondary to-kalahari-brown-tertiary bg-clip-text text-transparent">
               Digital Future
             </span>
             <br />
