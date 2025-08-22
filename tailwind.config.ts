@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				kalahari: {
+					orange: 'hsl(var(--kalahari-orange))',
+					purple: 'hsl(var(--kalahari-purple))',
+					blue: 'hsl(var(--kalahari-blue))',
+					pink: 'hsl(var(--kalahari-pink))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
