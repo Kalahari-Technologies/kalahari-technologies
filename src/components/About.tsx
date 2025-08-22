@@ -13,7 +13,7 @@ const About = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Transforming Africa Through{" "}
-            <span className="gradient-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-kalahari-brown-tertiary to-kalahari-dark bg-clip-text text-transparent">
               Innovation
             </span>
           </h2>

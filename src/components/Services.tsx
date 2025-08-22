@@ -43,7 +43,7 @@ const Services = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Comprehensive IT Solutions for{" "}
-            <span className="gradient-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-kalahari-brown-primary to-kalahari-brown-secondary bg-clip-text text-transparent">
               Modern Africa
             </span>
           </h2>
