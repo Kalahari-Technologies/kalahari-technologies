@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import trocoIcon from '@/assets/troco.png';
+import oremsIcon from '@/assets/orems.png';
+
 
 const Hero = () => {
   return (
@@ -42,14 +45,12 @@ const Hero = () => {
           </div>
           
           <div className="mt-16">
-            <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider">
+            <p className="text-sm text-muted-foreground mb-1 uppercase tracking-wider">
               Trusted by African Startups
             </p>
-            <div className="flex items-center justify-center gap-8 opacity-60">
-              <div className="text-muted-foreground font-semibold">Fintech Solutions</div>
-              <div className="text-muted-foreground font-semibold">AI Development</div>
-              <div className="text-muted-foreground font-semibold">Blockchain Tech</div>
-              <div className="text-muted-foreground font-semibold">EdTech Platforms</div>
+            <div className="flex items-center justify-center opacity-60">
+              <img src={trocoIcon} className="w-[250px] h-[125px] object-cover opacity-30" />
+              <img src={oremsIcon} className="w-[250px] h-[125px] object-cover opacity-30" />
             </div>
           </div>
         </div>
