@@ -3,6 +3,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import trocoIcon from '@/assets/troco.png';
 import oremsIcon from '@/assets/orems.png';
 
+const trustedCompanies = [trocoIcon, oremsIcon]
+
 
 const Hero = () => {
   return (
@@ -49,8 +51,7 @@ const Hero = () => {
               Trusted by African Startups
             </p>
             <div className="flex items-center justify-center opacity-60">
-              <img src={trocoIcon} className="w-[250px] h-[125px] object-cover opacity-30" />
-              <img src={oremsIcon} className="w-[250px] h-[125px] object-cover opacity-30" />
+              {trustedCompanies.map(icon => <img src={icon} className="w-[215px] h-[102.5px] object-cover opacity-70 scale-[.65] md:scale-90 sm:scale-100" />)}
             </div>
           </div>
         </div>
