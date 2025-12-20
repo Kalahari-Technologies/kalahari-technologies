@@ -9,7 +9,7 @@ const links = [
 ];
 
 const sitemap = new SitemapStream({
-  hostname: 'https://kalaharitech.xyz',
+  hostname: 'https://www.kalaharitech.xyz',
 });
 
 const writeStream = createWriteStream('./public/sitemap.xml');
