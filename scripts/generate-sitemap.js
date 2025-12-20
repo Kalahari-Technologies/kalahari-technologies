@@ -1,35 +1,25 @@
-import fs from 'fs';
+// generate-sitemap.mjs
+import { writeFile } from 'fs/promises';
 
-const DOMAIN = 'https://www.kalaharitech.xyz';
-
-const staticRoutes = [
+const baseUrl = 'https://www.kalaharitech.xyz';
+const routes = [
   '/',
+  // add all your React Router paths here
 ];
 
-async function generateSitemap() {
-  const dynamicRoutes = []; // await getDynamicRoutes();
-
-  const allRoutes = [
-    ...staticRoutes.map(path => ({ path })),
-    ...dynamicRoutes,
-  ];
-
-  const urls = allRoutes
-    .map(
-      ({ path, lastmod }) => `
-  <url>
-    <loc>${DOMAIN}${path}</loc>
-    ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}
-  </url>`
-    )
-    .join('');
-
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls}
+${routes
+  .map(
+    route => `  <url>
+    <loc>${baseUrl}${route}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <priority>${route === '/' ? '1.0' : '0.8'}</priority>
+  </url>`
+  )
+  .join('\n')}
 </urlset>`;
 
-  fs.writeFileSync('./public/sitemap.xml', sitemap, 'utf8');
-}
+await writeFile('public/sitemap.xml', sitemap);
 
-generateSitemap();
+console.log('Sitemap generated with ES modules!');
