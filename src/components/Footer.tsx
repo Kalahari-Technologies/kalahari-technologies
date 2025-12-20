@@ -1,42 +1,36 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import kalahariTech from '@/assets/kalahari-tech.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-card/50 border-t border-border">
+    <footer className="">
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-3 space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg"><img src="/kalahari-tech.png" className="scale-[2.2] scale-y-[3]" /></span>
-              </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  Kalahari Technologies
-                </span>
-            </div>
-            <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
+          <div className="md:col-span-2 mb-6">
+            <img src={kalahariTech} className="w-[130px] aspect-[2097/1000] mb-1.5 ml-1 scale-x-[1.75] scale-y-[1.72] object-cover" />
+            <p className="text-muted-foreground mb-6 max-w-md leading-relaxed text-base font-aeonik">
               Empowering African businesses with cutting-edge IT solutions in Fintech, AI, 
               Blockchain, and Education Technology. Building the digital future of Africa, one startup at a time.
             </p>
             <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Github className="w-5 h-5" />
+              <Button variant="ghost" onClick={()=>window.open("https://www.instagram.com/kalahari_technologies/")} size="icon" className="hover:text-black hover:bg-white">
+                <Instagram className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button onClick={()=>window.open("https://www.linkedin.com/company/kalahari-tech/?viewAsMember=true")} variant="ghost" size="icon" className="hover:text-black hover:bg-white">
                 <Linkedin className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button variant="ghost" size="icon" className="hover:text-black hover:bg-white">
                 <Twitter className="w-5 h-5" />
               </Button>
             </div>
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Services</h4>
-            <ul className="space-y-3">
+          <div className="font-aeonik">
+            <h4 className="font-semibold mb-6 font-geist">SERVICES</h4>
+            <ul className="space-y-3 text-base">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth">
                   Fintech Solutions
@@ -71,8 +65,8 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Contact</h4>
+          <div className="font-aeonik">
+            <h4 className="text-lg font-semibold mb-6 font-geist">CONTACT</h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />

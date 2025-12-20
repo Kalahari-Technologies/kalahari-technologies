@@ -1,31 +1,34 @@
 import { Button } from "@/components/ui/button";
+import kalahari from '@/assets/kalahari-white.png'
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 py-4">
-        <nav className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            {/* Logo placeholder - will be updated when logo is available */}
-            <div className="flex items-center gap-3 space-x-3">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg"><img src="/kalahari-tech.png" className="scale-[2.2] scale-y-[3]" /></span>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  Kalahari Technologies
-                </span>
-            </div>
+    <header className="z-50 bg-background/100 backdrop-blur-md border-border font-aeonik">
+      <div className="container mx-auto px-[6.5rem] py-6">
+        <div className="absolute bottom-0 w-full h-px -translate-x-1/2 border-0 opacity-10 left-1/2 bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,rgb(255,255,255)_52.07%,rgba(255,255,255,0)_100%)]" />
+        <nav className="flex w-full items-center justify-between">
+          <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+            <img src={kalahari} className="scale-x-[3.2] scale-y-[3]" />
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-muted-foreground hover:text-foreground transition-smooth">
+          <div className="hidden md:flex items-center space-x-8 text-[15px]">
+            <a href="#products" className="text-white hover:text-foreground transition-smooth">
+              Products
+            </a>
+            <a href="#services" className="text-white hover:text-foreground transition-smooth">
               Services
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-smooth">
-              About
+            <a href="#portfolio" className="text-white hover:text-foreground transition-smooth">
+              Portfolio
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-smooth">
-              Contact
+            <a href="#customers" className="text-white hover:text-foreground transition-smooth">
+              Customers
+            </a>
+            <a href="#careers" className="text-white hover:text-foreground transition-smooth">
+              Careers
+            </a>
+            <a href="#contact" className="text-white hover:text-foreground transition-smooth">
+              Resources
             </a>
           </div>
           
