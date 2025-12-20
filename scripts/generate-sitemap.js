@@ -1,23 +1,35 @@
-import { SitemapStream, streamToPromise } from 'sitemap';
-import { createWriteStream } from 'fs';
+import fs from 'fs';
 
-const links = [
-  { url: '/', changefreq: 'weekly', priority: 1.0 },
-//   { url: '/about', changefreq: 'monthly' },
-//   { url: '/pricing', changefreq: 'monthly' },
-//   { url: '/contact', changefreq: 'monthly' },
+const DOMAIN = 'https://www.kalaharitech.xyz';
+
+const staticRoutes = [
+  '/',
 ];
 
-const sitemap = new SitemapStream({
-  hostname: 'https://www.kalaharitech.xyz',
-});
+async function generateSitemap() {
+  const dynamicRoutes = []; // await getDynamicRoutes();
 
-const writeStream = createWriteStream('./public/sitemap.xml');
+  const allRoutes = [
+    ...staticRoutes.map(path => ({ path })),
+    ...dynamicRoutes,
+  ];
 
-links.forEach(link => sitemap.write(link));
+  const urls = allRoutes
+    .map(
+      ({ path, lastmod }) => `
+  <url>
+    <loc>${DOMAIN}${path}</loc>
+    ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}
+  </url>`
+    )
+    .join('');
 
-sitemap.end();
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>`;
 
-streamToPromise(sitemap).then(sm =>
-  writeStream.write(sm.toString())
-);
+  fs.writeFileSync('./public/sitemap.xml', sitemap, 'utf8');
+}
+
+generateSitemap();
