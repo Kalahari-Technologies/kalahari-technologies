@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="flex flex-col text-center max-w-4xl mx-auto max-md:justify-center">
           
           <h1 className="leading-tight text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6  font-aeonik">
             Building Africa's{" "}
