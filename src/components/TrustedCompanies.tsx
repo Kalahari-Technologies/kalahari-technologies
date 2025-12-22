@@ -6,12 +6,12 @@ const trustedCompanies = [trocoIcon, oremsIcon, bloomsIcon]
 
 const TrustedCompanies = () => {
    return (
-     <div className="py-16 flex flex-col items-center justify-center font-geist">
+     <div className="pt-4 pb-16 flex flex-col items-center justify-center font-geist">
         <p className="text-xs text-muted-foreground mb-5 uppercase tracking-wider">
             Trusted by African Startups
         </p>
-        <div className="flex items-center justify-center gap-1">
-            {trustedCompanies.map(icon => <img src={icon} className="w-[200px] aspect-[2097/1000] object-cover scale-[.50] md:scale-90 sm:scale-100" />)}
+        <div className="flex flex-wrap items-center justify-center gap-x-1 md:gap-x-3 lg:gap-x-10">
+            {trustedCompanies.map(icon => <img src={icon} className="w-[125px] aspect-[2097/1000] object-cover md:w-[150px]" />)}
         </div>
     </div>
    );

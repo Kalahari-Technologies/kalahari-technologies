@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 export default {
 	darkMode: ["class"],
@@ -103,5 +104,31 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function(api: PluginAPI) {
+			api.addComponents({
+				'.keen-slider:not([data-keen-slider-disabled])': {
+					'-webkit-touch-callout': 'none',
+					'-webkit-tap-highlight-color': 'transparent',
+					'align-content': 'flex-start',
+					'display': 'flex',
+					'overflow': 'hidden',
+					'position': 'relative',
+					'touch-action': 'pan-y',
+					'-webkit-user-select': 'none',
+					'-moz-user-select': 'none',
+					'user-select': 'none',
+					'-khtml-user-select': 'none',
+					'width': '100%',
+				},
+				'.keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide': {
+					'min-height': '100%',
+					'overflow': 'hidden',
+					'position': 'relative',
+					'width': '100%',
+				},
+			});
+		},
+	],
 } satisfies Config;
