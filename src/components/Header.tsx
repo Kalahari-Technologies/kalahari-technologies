@@ -6,7 +6,7 @@ import { useMediaQuery } from "@/hooks/user-media-query";
 const Header = () => {
   const tabletBreakpoint = useMediaQuery("(max-width: 1074px)")
   return (
-    <header className="z-50 bg-background/100 backdrop-blur-md border-border font-aeonik overflow-x-hidden">
+    <header className="z-50 bg-background/100 h-[13vh] backdrop-blur-md border-border font-aeonik overflow-x-hidden">
       <div className="container mx-auto md:px-[6.5rem] py-6">
         <div className="absolute bottom-0 w-full h-px -translate-x-1/2 border-0 opacity-10 left-1/2 bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,rgb(255,255,255)_52.07%,rgba(255,255,255,0)_100%)]" />
         <nav className="flex w-full items-center justify-between">

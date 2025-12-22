@@ -6,7 +6,7 @@ const trustedCompanies = [trocoIcon, oremsIcon, bloomsIcon]
 
 const TrustedCompanies = () => {
    return (
-     <div className="pt-4 pb-16 flex flex-col items-center justify-center font-geist">
+     <div className="pt-8 pb-16 flex flex-col items-center justify-center font-geist">
         <p className="text-xs text-muted-foreground mb-5 uppercase tracking-wider">
             Trusted by African Startups
         </p>
