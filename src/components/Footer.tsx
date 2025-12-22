@@ -4,7 +4,7 @@ import kalahariTech from '@/assets/kalahari-tech.png';
 
 const Footer = () => {
   return (
-    <footer className="">
+    <footer className="overflow-x-hidden">
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}

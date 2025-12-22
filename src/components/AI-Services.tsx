@@ -13,24 +13,28 @@ const subServices = [
     {
         name: "Natural Language Processing",
         description: "Transform how your business understands and communicates",
+        secondDescription: "Our NLP solutions help you automatically analyze customer feedback, extract insights from documents, power intelligent chatbots, and understand sentiment at scale.",
         fullDescription: "Our NLP solutions help you automatically analyze customer feedback, extract insights from documents, power intelligent chatbots, and understand sentiment at scale",
         icon: nlpIcon
     },
     {
         name: "Predictive Analytics",
         description: "See what's coming before it happens",
+        secondDescription: "Our predictive models analyze your historical data to forecast sales, anticipate customer churn, optimize inventory, detect fraud, and predict maintenance needs.",
         fullDescription: "Our predictive models analyze your historical data to forecast sales, anticipate customer churn, optimize inventory, detect fraud, and predict maintenance needs. Stop reacting to problems—start preventing them. We turn your data into your competitive advantage",
         icon: predictiveAnalysisIcon
     },
     {
         name: "Document Intelligence & Automation",
         description: "Stop manual data entry. Start intelligent automation",
+        secondDescription: "Automatically classify, route, and process thousands of documents while your team focuses on higher-value work.",
         fullDescription: "Automatically classify, route, and process thousands of documents while your team focuses on higher-value work. From accounts payable to HR onboarding, we automate the paperwork so you can focus on growing your business",
         icon: nlpIcon
     },
     {
         name: "AI Integration & Implementation",
         description: "Bring AI into your existing workflows—seamlessly",
+        secondDescription: "Bring AI into your existing workflows—seamlessly. We integrate cutting-edge AI capabilities directly into your current systems and processes.",
         fullDescription: "You don't need to rebuild everything to benefit from AI. We integrate cutting-edge AI capabilities directly into your current systems and processes. Whether you're using Salesforce, SAP, custom internal tools, or legacy software, we connect AI models, APIs, and automation to enhance what you already have",
         icon: nlpIcon
     }
@@ -147,7 +151,7 @@ const AIServices = ()=>{
                         <div ref={textRef} className='keen-slider !overflow-visible pb-24'>
                             {subServices.map(service => <div className='space-y-4 keen-slider__slide active'>
                                 <p className='text-2xl leading-10 font-aeonik'>{service.name}</p>
-                                <p className='text-white/70'>{service.description}</p>
+                                <p className='text-white/70'>{service.secondDescription}</p>
                             </div>)}
                         </div>
                     </div>

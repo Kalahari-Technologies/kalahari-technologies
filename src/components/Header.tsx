@@ -1,17 +1,19 @@
 import { Button } from "@/components/ui/button";
 import kalahari from '@/assets/kalahari-white.png'
+import { ArrowRight, MenuIcon } from "lucide-react";
+import { useMediaQuery } from "@/hooks/user-media-query";
 
 const Header = () => {
+  const tabletBreakpoint = useMediaQuery("(max-width: 1074px)")
   return (
-    <header className="z-50 bg-background/100 backdrop-blur-md border-border font-aeonik">
-      <div className="container mx-auto px-[6.5rem] py-6">
+    <header className="z-50 bg-background/100 backdrop-blur-md border-border font-aeonik overflow-x-hidden">
+      <div className="container mx-auto md:px-[6.5rem] py-6">
         <div className="absolute bottom-0 w-full h-px -translate-x-1/2 border-0 opacity-10 left-1/2 bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,rgb(255,255,255)_52.07%,rgba(255,255,255,0)_100%)]" />
         <nav className="flex w-full items-center justify-between">
-          <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-            <img src={kalahari} className="scale-x-[3.2] scale-y-[3]" />
-          </div>
+          <img src={kalahari} className="w-[110px] object-cover object-center" />
           
-          <div className="hidden md:flex items-center space-x-8 text-[15px]">
+          
+          <div className={`flex ${tabletBreakpoint? 'hidden': ''} items-center space-x-8 text-[15px]`}>
             <a href="#products" className="text-white hover:text-foreground transition-smooth">
               Products
             </a>
@@ -33,9 +35,12 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button variant="heroOutline" size="sm">
-              Get Started
+            <Button className={`bg-white group text-black font-medium hover:bg-white ${tabletBreakpoint? 'hidden': ''}`} size="sm">
+              Start Build
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+            <p className={`font-medium font-geist text-sm ${tabletBreakpoint? 'hidden' : ''}`}>Log In</p>
+            <MenuIcon className="min-[1074px]:hidden" />
           </div>
         </nav>
       </div>
