@@ -86,7 +86,7 @@ const AIServices = ()=>{
         }
     })
 
-    const i = useEffect(()=>{
+    useEffect(()=>{
         if(!visible || !isDesktop) return;
 
         const timer = setInterval(()=>{
@@ -117,7 +117,7 @@ const AIServices = ()=>{
                             </div>
                             <h2 className="font-aeonik leading-snug lg:leading-[1.25] text-3xl md:text-4.5xl lg:text-5xl [text-wrap:balance]">Full-Stack AI Systems</h2>
                         </div>
-                        <p className="mt-4 lg:mt-2 leading-[1.60] lg:text-xl [text-wrap:balance] [white-space:inherit] block font-normal w-full">Intelligence designed to solve operational problems in Africa and global markets.</p>
+                        <p className="mt-4 lg:mt-2 leading-[1.60] lg:text-xl [text-wrap:balance] [white-space:inherit] block font-normal w-full">Build Intelligence designed to solve operational problems in Africa and global markets.</p>
                     </div>
                     <Button className='m-8 group bg-white text-black hover:bg-white font-medium font-geist text-sm'>
                         Get Started
@@ -157,7 +157,7 @@ const AIServices = ()=>{
                     </div>
                     <div className='relative z-50 mx-auto -mt-16 lg:-mt-10 xl:hidden'>
                         {subServices.map((_, index) => <button onClick={e => imageInstance.current?.moveToIdx(index)} className='px-1 py-2 sm:px-2'>
-                            <div className={`h-1 sm:h-1.5 md:h-2 rounded-full transition-width duration-300 w-1 sm:w-1.5 md:w-2 ${index === serviceIndex? 'bg-white w-4 sm:w-5 md:w-6' : 'bg-white/40'}`}></div>
+                            <div className={`h-1 sm:h-1.5 md:h-2 rounded-full transition-width duration-300 w-1 sm:w-1.5 md:w-2 ${index === serviceIndex || (index === 0 && serviceIndex === -1)? 'bg-white w-4 sm:w-5 md:w-6' : 'bg-white/40'}`}></div>
                         </button>)}
                     </div>
                 </div>
