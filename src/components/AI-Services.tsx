@@ -108,7 +108,7 @@ const AIServices = ()=>{
 
     return (
         <section ref={sectionRef} id='ai' className="py-18 lg:py-20 bg-transparent relative lg:pb-8 overflow-x-hidden">
-            <div className='relative md:max-w-screen-md sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl container'>
+            <div className='relative container'>
                 <div className='flex flex-col justify-center mb-10 md:mb-20 md:mt-12 items-center mx-auto max-w-3xl text-center !mb-16'>
                     <div className="flex flex-col">
                         <div className="flex flex-col">

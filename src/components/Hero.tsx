@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useMediaQuery } from "@/hooks/user-media-query";
 import { ArrowRight, Sparkles } from "lucide-react";
+import Spline from '@splinetool/react-spline';
+
 
 
 const Hero = () => {
@@ -8,17 +10,17 @@ const Hero = () => {
   return (
     <section className="min-h-[87vh] max-h-[90vh] flex items-center justify-center relative overflow-hidden">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-kalahari-brown-primary/35 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-kalahari-brown-secondary/35 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 w-full h-full">
+        <Spline className="size-full object-cover hidden z-10 md:block"  scene={"https://prod.spline.design/F2JNHiJZFV4dnJDB/scene.splinecode"}  />
+        <div className="w-1/5 h-1/6 bg-black absolute z-20 bottom-0 right-0" />
       </div>
       
-      <div className="container mx-auto px-6 py-8 sm:py-20 relative z-10">
+      <div className="container mx-auto px-6 py-8 sm:py-20 relative z-10 select-none">
         <div className="flex flex-col text-center max-w-4xl mx-auto max-md:justify-center">
           
           <h1 className="leading-tight text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6  font-aeonik">
             Building Africa's{" "}
-            <span className="bg-gradient-to-r from-kalahari-brown-secondary to-kalahari-brown-tertiary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-kalahari-brown-primary via-kalahari-brown-secondary to-kalahari-dark bg-clip-text text-transparent">
               Digital Future
             </span>
             <br />
@@ -26,8 +28,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-base sm:text-lg leading-relaxed md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto font-aeonik">
-            Kalahari Tech empowers small businesses and startups across Africa with 
-            cutting-edge IT solutions in Fintech, Artificial Intelligence, Blockchain, and Education Technology.
+            Kalahari Tech empowers startups and organizations across Africa with cutting-edge solutions
+            aiming to drive growth, innovation, efficiency, and global competitiveness
           </p>
           
           <div className="flex flex-row items-center justify-center gap-6">

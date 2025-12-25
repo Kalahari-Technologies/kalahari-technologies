@@ -15,7 +15,12 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				'2xl': '1400px',
+				'xl': '1280px',
+				'lg': '1024px',
+				'md': '768px',
+				'sm': '640px'
+
 			}
 		},
 		extend: {
